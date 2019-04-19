@@ -2,16 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Shadow Campus</title>
+    <style>
+
+        html, body {
+          margin: 0px;
+          padding: 0px;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+
+          a:link, a:visited {
+            text-decoration: none;
+            color: #333333;
+
+          }
+
+          a:hover{
+          text-decoration: underline;
+          color: #CC0000;
+        }
+
+
+        .navbar {
+    width: 100%;
+    background-color: #b2b9c4;
+    overflow: auto;
+  }
+
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 30.5%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: #4E79A7;
+  }
+
+  /* Style the current/active link */
+  .navbar a.active {
+    background-color: #4E79A7;
+  }
+
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+    </style>
+
   </head>
+
   <body>
-    <div class="topnav">
-      <a class="active" href="/table.html">Table</a>
-      <a href="/chart.html">Chart</a>
-      <a href="/maps.html">Maps</a>
+
+  <h3>A data visualization project by Jasmine Wu, inspired by The Boston Globe's investigation into <a href="https://www.bostonglobe.com/metro/specials/shadow-campus">Shadow Campuses</a> for Caty Ender's Visual Storytelling class.</h3>
+
+    <div class="navbar" id="navbar">
+      <a class="active" href="index.html">Table</a>
+      <a href="chart.html">Chart</a>
+      <a href="maps.html">Maps</a>
     </div>
 <br/>
 <br/>
+
 
 <div class='tableauPlaceholder' id='viz1555556834993' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dormgaptable&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dormgaptable&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dormgaptable&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1555556834993');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 <br/>
